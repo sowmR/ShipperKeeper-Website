@@ -1,0 +1,38 @@
+@import url("../styles/palette.css");
+main{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul {
+    background-color: var(--key-lime);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+li {
+    display: inline;
+    float: left;
+  }
+li a {
+    display: block;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li a:hover {
+    background-color: var(--keppel);
+    color: white;
+  }
+a {
+    display: block;
+    padding: 8px;
+  }
+.aboutButton{
+  float:right;
+}

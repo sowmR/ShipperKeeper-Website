@@ -1,0 +1,25 @@
+@import url("../styles/palette.css");
+
+.header{
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    align-content: center;
+}
+.subtitle{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+}
+.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.joinContainer{
+    display: inline-block;
+    height: auto;
+    width: 49%;
+    padding: 5px;
+    background-color: var(--viridian-green);
+}

@@ -1,26 +1,18 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import Navbar from '../components/navbar';
+import Container from '../components/container';
+import Footer from '../components/footer';
 
 const AboutPage = () => {
-    <main>
-        <title>About ShipperKeeper</title>
-        <head>
-            <ul>
-                <li><Link to="index.html">Home</Link></li>
-                <li style="float:right"><Link to="about.html">About</Link></li>
-            </ul>
-        </head>
-        <body>
-            <div class="container">
-                <div class="header">
-                    <h1>About Us</h1>
-                </div>
-            </div>
-        </body>
-        <footer>
-            <p>ShipperKeeper</p>
-        </footer>
-    </main>
+    return (
+        <main>
+            <Navbar pageTitle="About ShipperKeeper"></Navbar>
+            <body>
+                <Container bannerTitle = "About Us"></Container>
+            </body>
+            <Footer></Footer>
+        </main>
+    )
 }
 
 export default AboutPage;

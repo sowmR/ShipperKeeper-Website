@@ -1,0 +1,25 @@
+:root {
+    /* CSS HEX */
+    --key-lime: #d9ed92;
+    --yellow-green-crayola: #b5e48c;
+    --granny-smith-apple: #99d98c;
+    --ocean-green: #76c893;
+    --keppel: #52b69a;
+    --viridian-green: #34a0a4;
+    --blue-munsell: #168aad;
+    --celadon-blue: #1a759f;
+    --lapis-lazuli: #1e6091;
+    --yale-blue: #184e77;
+
+    /* CSS HSL */
+    --key-lime: hsla(73, 72%, 75%, 1);
+    --yellow-green-crayola: hsla(92, 62%, 72%, 1);
+    --granny-smith-apple: hsla(110, 50%, 70%, 1);
+    --ocean-green: hsla(141, 43%, 62%, 1);
+    --keppel: hsla(163, 41%, 52%, 1);
+    --viridian-green: hsla(182, 52%, 42%, 1);
+    --blue-munsell: hsla(194, 77%, 38%, 1);
+    --celadon-blue: hsla(199, 72%, 36%, 1);
+    --lapis-lazuli: hsla(206, 66%, 34%, 1);
+    --yale-blue: hsla(206, 66%, 28%, 1);
+}

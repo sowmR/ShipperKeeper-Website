@@ -1,45 +1,21 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import Navbar  from '../components/navbar';
+import Container from '../components/container';
+import Footer from "../components/footer";
+import {JoinContainer} from '../components/container';
 
 const IndexPage = () => {
   return (
     <main>
-        <title>ShipperKeeper</title>
-        <head>
-            <ul>
-                <li><Link to="index.js">Home</Link></li>
-                <li style="float:right"><Link to="about.html">About</Link></li>
-            </ul>
-        </head>
+        <Navbar pageTitle="ShipperKeeper"></Navbar>
         <body>
-            <div class="container">
-                <div class="header">
-                    <h1>ShipperKeeper</h1>
-                </div>
-                <div class="subtitle">
-                    <p>The future of Online Shipping</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="header">
-                    <h1>Our Solution</h1>
-                </div>
-                <div class="subtitle">
-                    <p>An API to send shipments to local stores</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="header">
-                    <h1>Our Purpose</h1>
-                </div>
-                <div class="subtitle">
-                    <p>To grow both online and brick-and-mortar stores</p>
-                </div>
-            </div>
+            <Container bannerTitle="Shipper Keeper" bannerSubtitle="The future of Online Shipping"></Container>
+            <Container bannerTitle="Our Solution" bannerSubtitle="An API to send shipments to local stores"></Container>
+            <Container bannerTitle="Our Purpose" bannerSubtitle="To grow both online and brick-and-mortar stores"></Container>
+            <JoinContainer bannerTitle="Shipper" bannerSubtitle="Become a"></JoinContainer>
+            <JoinContainer bannerTitle="Keeper" bannerSubtitle="Become a"></JoinContainer>
         </body>
-        <footer>
-            <p>ShipperKeeper</p>
-        </footer>
+        <Footer></Footer>
     </main>
   )
 }
