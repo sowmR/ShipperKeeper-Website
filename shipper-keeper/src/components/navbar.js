@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import "./navbar.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {aboutButton} from "./navbar.module.css";
 
 const Navbar = (props) => {

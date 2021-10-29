@@ -8,7 +8,7 @@ const AboutPage = () => {
         <main>
             <Navbar pageTitle="About ShipperKeeper"></Navbar>
             <body>
-                <Container bannerTitle = "About Us"></Container>
+                <Container bannerTitle = "About Us" bannerSubtitle = "The Story of ShipperKeeper"></Container>
             </body>
             <Footer></Footer>
         </main>
