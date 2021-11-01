@@ -1,14 +1,15 @@
 import * as React from 'react';
 import "./container.module.css";
 import { header, subtitle, container, joinContainer, buttonCenter} from "./container.module.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
 
 const Container = (props) => {
     const bannerTitle = props.bannerTitle;
     const bannerSubtitle = props.bannerSubtitle;
+    const bannerImage = props.bannerImage;
     return (
-        <div className={container}>
+        <div className={container} style={{'backgroundImage' : 'url('+bannerImage+')'}}>
             <div className={header}>
                 <h1>{bannerTitle}</h1>
             </div>
@@ -22,6 +23,7 @@ const Container = (props) => {
 const JoinContainer = (props) => {
     const bannerTitle = props.bannerTitle;
     const bannerSubtitle = props.bannerSubtitle;
+    const bannerImage = props.bannerImage;
     return (
         <div className={joinContainer}>
             <div className={subtitle}>
