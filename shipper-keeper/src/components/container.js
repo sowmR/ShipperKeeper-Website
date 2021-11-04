@@ -9,14 +9,17 @@ const Container = (props) => {
     const bannerSubtitle = props.bannerSubtitle;
     const bannerImage = props.bannerImage;
     return (
-        <div className={container} style={{'backgroundImage' : 'url('+bannerImage+')'}}>
-            <div className={header}>
-                <h1>{bannerTitle}</h1>
-            </div>
-            <div className={subtitle}>
-                <p>{bannerSubtitle}</p>
-            </div>
-        </div>
+        <Card className={container}>
+            <Card.Img variant="overlay" src={bannerImage} />
+            <Card.ImgOverlay>
+                <Card.Body>
+                    <Card.Title className={header}>{bannerTitle}</Card.Title>
+                    <Card.Text className={subtitle}>
+                        {bannerSubtitle}
+                    </Card.Text>
+                </Card.Body>
+            </Card.ImgOverlay>
+        </Card>
     )
 }
 
@@ -25,17 +28,29 @@ const JoinContainer = (props) => {
     const bannerSubtitle = props.bannerSubtitle;
     const bannerImage = props.bannerImage;
     return (
-        <div className={joinContainer}>
-            <div className={subtitle}>
-                <p>{bannerSubtitle}</p>
-            </div>
-            <div className={header}>
-                <h1>{bannerTitle}</h1>
-            </div>
-            <div className={buttonCenter}>
-                <Button href="/" variant="outline-primary" size="lg">Learn More</Button>
-            </div>
-        </div>
+        <Card className={joinContainer}>
+            <Card.Img variant="overlay" src={bannerImage}/>
+            <Card.ImgOverlay>
+                <Card.Body>
+                    <Card.Title className={header}>{bannerTitle}</Card.Title>
+                    <Card.Text className={subtitle}>
+                        {bannerSubtitle}
+                    </Card.Text>
+                    <div className={buttonCenter}>
+                        <Button href="/" variant="outline-primary" size="lg">Learn More</Button>
+                    </div>
+                </Card.Body>
+            </Card.ImgOverlay>
+        </Card>
+        // <div className={joinContainer}>
+        //     <div className={subtitle}>
+        //         {bannerSubtitle}
+        //     </div>
+        //     <div className={header}>
+        //         {bannerTitle}
+        //     </div>
+        //     
+        // </div>
     )
 }
 

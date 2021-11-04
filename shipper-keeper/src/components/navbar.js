@@ -2,7 +2,8 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import "./navbar.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {aboutButton} from "./navbar.module.css";
+import {aboutButton, logo} from "./navbar.module.css";
+import icon from "../images/icon.png";
 
 const Navbar = (props) => {
     const pageTitle = props.pageTitle;
@@ -11,6 +12,7 @@ const Navbar = (props) => {
             <title>{pageTitle}</title>
             <header>
                 <ul>
+                    <li><img className={logo} src={icon} alt="ShipperKeeper"/></li>
                     <li><Link to="/">Home</Link></li>
                     <li className={aboutButton}><Link to="/about">About</Link></li>
                 </ul>
