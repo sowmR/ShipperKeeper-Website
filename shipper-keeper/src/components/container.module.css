@@ -1,7 +1,4 @@
-main
-{
-    font-family: "Lucida Console", "Courier New", monospace;
-}
+
 .header{
     font-weight: bold;
     font-size: 48px;
@@ -11,6 +8,13 @@ main
 }
 .subtitle{
     font-size: 24px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+.text
+{
+    font-size: 16px;
     text-align: center;
     align-content: center;
     color: white;

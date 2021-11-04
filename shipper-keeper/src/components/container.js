@@ -1,6 +1,6 @@
 import * as React from 'react';
 import "./container.module.css";
-import { header, subtitle, container, joinContainer, buttonCenter} from "./container.module.css";
+import { header, subtitle, container, joinContainer, buttonCenter, text} from "./container.module.css";
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 
@@ -8,6 +8,7 @@ const Container = (props) => {
     const bannerTitle = props.bannerTitle;
     const bannerSubtitle = props.bannerSubtitle;
     const bannerImage = props.bannerImage;
+    const children = props.children;
     return (
         <Card className={container}>
             <Card.Img variant="overlay" src={bannerImage} />
@@ -16,6 +17,9 @@ const Container = (props) => {
                     <Card.Title className={header}>{bannerTitle}</Card.Title>
                     <Card.Text className={subtitle}>
                         {bannerSubtitle}
+                    </Card.Text>
+                    <Card.Text className={text}>
+                        {children}
                     </Card.Text>
                 </Card.Body>
             </Card.ImgOverlay>
@@ -42,15 +46,6 @@ const JoinContainer = (props) => {
                 </Card.Body>
             </Card.ImgOverlay>
         </Card>
-        // <div className={joinContainer}>
-        //     <div className={subtitle}>
-        //         {bannerSubtitle}
-        //     </div>
-        //     <div className={header}>
-        //         {bannerTitle}
-        //     </div>
-        //     
-        // </div>
     )
 }
 
