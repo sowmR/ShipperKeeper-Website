@@ -36,10 +36,10 @@ const JoinContainer = (props) => {
             <Card.Img variant="overlay" src={bannerImage}/>
             <Card.ImgOverlay>
                 <Card.Body>
-                    <Card.Title className={header}>{bannerTitle}</Card.Title>
                     <Card.Text className={subtitle}>
                         {bannerSubtitle}
                     </Card.Text>
+                    <Card.Title className={header}>{bannerTitle}</Card.Title>
                     <div className={buttonCenter}>
                         <Button href="/" variant="outline-primary" size="lg">Learn More</Button>
                     </div>

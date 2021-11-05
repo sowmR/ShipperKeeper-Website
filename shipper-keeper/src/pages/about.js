@@ -8,6 +8,7 @@ const AboutPage = () => {
         <main>
             <Nav pageTitle="About ShipperKeeper"></Nav>
             <body style={{"backgroundColor":"#606c38ff"}}>
+                <p>&nbsp;</p>              
                 <Container bannerTitle = "About Us" bannerSubtitle = "The Story of ShipperKeeper">
                     <p>
                         I am a freshman in high school, passionate about the local community’s well-being, and am thinking of ways to keep it vibrant. Another thing I’m passionate about is using technology to solve problems. I used to always enjoy going to toy stores and was devastated when each one closed down. Technological advancement doesn’t have to be a detriment to local businesses. Instead, there should be a way to help them. I strongly feel that there is room for all of us to grow & thrive.

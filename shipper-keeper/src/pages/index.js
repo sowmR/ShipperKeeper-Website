@@ -12,6 +12,7 @@ const IndexPage = () => {
     <main>
         <Nav pageTitle="ShipperKeeper"></Nav>
         <body style={{"backgroundColor":"#606c38ff"}}>
+            <p>&nbsp;</p>
             <Container bannerTitle="Shipper Keeper" bannerSubtitle="The future of Online Shipping" bannerImage={banner3} style={{"marginTop":"50px!important"}}></Container>
             <Container bannerTitle="Our Solution" bannerSubtitle="An API to send shipments to local stores" bannerImage={banner2}></Container>
             <Container bannerTitle="Our Purpose" bannerSubtitle="To grow both online and brick-and-mortar stores" bannerImage={banner1}></Container>
